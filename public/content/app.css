@@ -1,0 +1,66 @@
+/* custom css goes here */
+
+.navbar-colorr {
+  background-color: #f5ba13;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+.circle-img {
+  border-radius: 50%;
+  border: 7px solid #fff;
+  width: 120px;
+  height: 120px;
+}
+
+footer {
+  position: fixed ;
+
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+.LogoImg {
+         width: 50px; 
+         height: 50px; 
+        
+       
+}
+
+footer p {
+  color: #ccc;
+}
+
+.headingg {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+  font-size: larger;
+}
+
+.headingT {
+  font-family: "McLaren", cursive;
+}
+
+.display-4 {
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+  color: #cfd3ce;
+}
+
+.p1 {
+  color: #ccc;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+.welcome {
+  color:#bb2205;
+}

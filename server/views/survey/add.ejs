@@ -1,0 +1,58 @@
+<%- include ../partials/header.ejs %>
+
+<%- include ../partials/main_nav.ejs %>
+
+
+<!-- Content for the Add page -->
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title %></h1>
+
+            <form class="form" method="POST">
+
+                <div class="form-group">
+                    <label for="nameTextField">Name</label>
+                    <input type="text" class="form-control" id="nameTextField" placeholder="Type your Name" name="Name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="genderTextField">gender</label>
+                    <input type="text" class="form-control" id="genderTextField" placeholder="Gender" name="Gender"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="answerTextField">1. Among all the Programming languages you've learned. Which one is the
+                        easiest?</label>
+                    <input type="text" class="form-control" id="answerTextField" placeholder="Enter your answer"
+                        name="Answer1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="answerTextField">2. Which do you prefer, ONLINE class or IN-PERSON class?</label>
+                    <input type="text" class="form-control" id="answerTextField" placeholder="Enter your answer"
+                        name="Answer2" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="answerTextField">3. After you graduate, what is your future goal?</label>
+                    <input type="text" class="form-control" id="answerTextField" placeholder="Enter your answer"
+                        name="Answer3" required>
+                </div>
+
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-edit"></i> Submit</button>
+
+                <a href="/survey-list" class="btn btn-warning">
+                    <i class="fas fa-undo"></i> Cancel</a>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<%- include ../partials/bottom_nav.ejs %>
+<%- include ../partials/footer.ejs %>

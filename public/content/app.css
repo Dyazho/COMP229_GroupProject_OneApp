@@ -28,8 +28,6 @@ footer {
 .LogoImg {
          width: 50px; 
          height: 50px; 
-        
-       
 }
 
 footer p {
@@ -63,4 +61,286 @@ footer p {
 
 .welcome {
   color:#bb2205;
+}
+
+/** login page **/
+body .login-container {
+  display: grid;
+  gap: 0;
+  grid-template-areas: "left-container right-container";
+  width: 600px;
+  height: 315px;
+  margin: 0 auto;
+  margin-top: 10%;
+  border-radius: 15px;
+  box-shadow: 0 10px 50px 0px rgb(75, 67, 60);
+  background-color:#b44929;
+}
+
+body .login-container .left-container {
+  grid-area: left-container;
+  height: 315px;
+  display: inline-block;
+  width: 450px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 60px;
+  /**background-image: linear-gradient(to bottom right,#FF9D6C, #BB4E75);**/
+  background-image: linear-gradient(to bottom right,
+  #FEC163,
+  #DE4313);
+}
+
+body .login-container .left-container .title {
+
+  color: #fff;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+body .login-container .left-container .title span {
+  font-weight: bold;
+  border-bottom: 3px solid rgb(237,221,22) ;
+}
+
+body .login-container .left-container .input-container {
+  padding: 20px 0 0 0;
+}
+
+body .login-container .alert {
+  margin: 10px 0;
+  text-align: center;
+  padding: 5px 0 5px 0;
+}
+
+body .login-container .left-container .input-container input {
+  border: 0;
+  background: none;
+  outline: 0;
+  color: #fff;
+  margin: 20px 0;
+  display: block;
+  width: 100%;
+  padding: 5px 0;
+  transition: .2s;
+  border-bottom: 1px solid rgb(114, 114, 114);
+}
+
+body .login-container .left-container .input-container input:hover {
+  border-bottom-color: #fff;
+}
+
+::-webkit-input-placeholder {
+  color: rgb(114, 114, 114);
+}
+
+body .login-container .left-container .message-container {
+  font-size: 14px;
+  transition: .2s;
+  color: rgb(114, 114, 114);
+  cursor: pointer;
+}
+
+body .login-container .left-container .message-container:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+body .login-container .right-container {
+  grid-area: right-container;
+  width: 145px;
+  display: inline-block;
+  height: 315px;
+  vertical-align: top;
+}
+
+.actionBtnContainer{
+  position: relative;
+  top: 47%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+body .login-container .right-container .regist-container {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+body .login-container .right-container .regist-container span {
+  border-bottom: 3px solid rgb(237,221,22) ;
+}
+
+body .login-container .right-container .actoin-container {
+  font-size: 10px;
+  color: #fff;
+  display: block;
+  margin-top: 10%;
+  margin-right: auto;
+  width: 100%;
+  /**position: relative;*/
+}
+
+body .login-container .right-container .actoin-container input{
+  margin: auto;
+}
+
+body .login-container .right-container .actoin-container span {
+  border: 1px solid rgb(237,221,22);
+  padding: 10px;
+  display: inline;
+  line-height: 25px;
+  border-radius: 25px;
+  position: absolute;
+  bottom: 10px;
+  left: calc(72px - 25px);
+  transition: .2s;
+  cursor: pointer;
+}
+
+body .login-container .right-container .actoin-container span:hover {
+  background-color: rgb(237,221,22);
+  color: rgb(95, 76, 194);
+}
+
+
+/** registration container **/
+
+body .register-container{
+  display: grid;
+  gap: 0;
+  grid-template-areas: "left-info-container right-register-container";
+  width: 700px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 5%;
+  border-radius: 15px;
+  box-shadow: 0 10px 50px 0px rgb(75, 67, 60);
+  background-color:#ffffff;
+}
+
+body .left-info-container{
+  grid-area: left-info-container;
+  color: #ccc;
+  width: 350px;
+  padding: 25px;
+  height: 100%;
+  text-align: center;
+  vertical-align: top;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-image: linear-gradient(to bottom right,
+  #FEC163,
+  #DE4313);
+}
+
+body .info-container{
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+body .left-info-container h1{
+  color: #ffffff;
+  text-align: center;
+}
+
+body .left-info-container span{
+  color: #ffffff;
+  text-align: center;
+}
+
+body .right-register-container{
+  grid-area: right-register-container;
+  padding: 25px;
+  width: 350px;
+  height: 100%;
+  vertical-align: top;
+  align-items: center;
+}
+
+body .register-title{
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 200;
+  font-weight: bold;
+  text-align: center;
+}
+
+body .register-title span{
+  border-bottom: 3px solid rgb(237,221,22) ;
+}
+
+body .register-input-container{
+  padding: 20px 0;
+}
+
+body .register-input-container input{
+  border: 0;
+  background: none;
+  outline: 0;
+  color: rgb(0, 0, 0);
+  margin: 20px 0;
+  display: block;
+  width: 100%;
+  padding: 5px 0;
+  transition: .2s;
+  border-bottom: 1px solid rgb(177, 177, 177);
+}
+
+body .register-input-container input:hover{
+  border-bottom-color: rgb(107, 106, 106);
+}
+
+body .register-input-container .register-message-container{
+  font-size: 14px;
+  transition: .2s;
+  color: rgb(199, 191, 219);
+  cursor: pointer;
+}
+
+body .register-input-container .register-message-container::hover{
+  color: #fff;
+}
+
+body .register-container .alert {
+  margin: 10px 0;
+  text-align: center;
+  padding: 5px 0 5px 0;
+}
+
+.register-action-container{
+   margin-bottom: 10px;
+}
+
+#signButton{
+  border-radius: 20px;
+	border: 1px solid #FF4B2B;
+	background-color: #FF4B2B;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+}
+#signButton:Hover{
+  border: 1px solid #bb3a24;
+  background-color: #bb3a24;
+}
+
+#cancelButton{
+  border-radius: 20px;
+	border: 1px solid #000000;
+	background-color: #000000;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+}
+#cancelButton:Hover{
+  border: 1px solid #535353;
+  background-color: #535353;
 }

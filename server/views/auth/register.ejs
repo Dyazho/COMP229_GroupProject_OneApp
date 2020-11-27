@@ -3,63 +3,57 @@
 <%- include ../partials/main_nav.ejs %>
 
 <main class="container">
-    <!-- Message Area -->
-    <% if(messages.length > 0) {%>
-        <div class="alert alert-danger">
-            <%= messages %>
+    <div class="register-container">
+
+        <div class="left-info-container">
+            <div class="info-container">
+                <h1>Sign Up</h1>
+                <span>Create your own personal surbey and join with us</span>
+            </div>
         </div>
-    <% } %>
 
-    <div class="row">
-        <div class="offset-md-4 col-md-4">
-            <h1>Please Register</h1>
-            <form method="POST" autocomplete="off">
-                <fieldset class="form-group">
-                    <label for="username">Username: </label>
-                    <input type="text" class="form-control"
-                    name="username" placeholder="Enter username"
-                    id="username" required autofocus>
-                </fieldset>
+        <div class="right-register-container">
+            <div class="register-title">
+                <span>REGISTER</span>
+            </div>
+            <div class="register-input-container">
+                <form method="POST" autocomplete="off">
+                    <input type="text" name="username" placeholder="Enter username" id="username" required autofocus>
+                    <input type="password" name="password" placeholder="Enter password" id="password" required>
+                    <input type="email" name="email" placeholder="Enter Email Address" id="email" required>
+                    <input type="text" name="displayName" placeholder="Enter Display Name" id="displayName" required>
+            </div>
+            <div class="register-message-container">
+                <!-- Message Area -->
+                <% if(messages.length > 0) {%>
+                <div class="alert alert-danger">
+                    <%= messages %>
+                </div>
+                <% } %>
+            </div>
+            <div class="d-flex">
+                <div class="register-action-container mx-auto">
+                    <input id="signButton" type="submit" class="btn btn-success" value="Register">
+                </div>
+            </div>
 
-                <fieldset class="form-group">
-                    <label for="password">Password: </label>
-                    <input type="password" class="form-control"
-                    name="password" placeholder="Enter password"
-                    id="password" required>
-                </fieldset>
-
-                <fieldset class="form-group">
-                    <label for="email">Email: </label>
-                    <input type="email" class="form-control"
-                    name="email" placeholder="Enter Email Address"
-                    id="email" required>
-                </fieldset>
-
-                <fieldset class="form-group">
-                    <label for="displayName">Display Name: </label>
-                    <input type="text" class="form-control"
-                    name="displayName" placeholder="Enter Display Name"
-                    id="displayName" required>
-                </fieldset>
-
-                <fieldset class="form-group text-right">
-                    <input type="submit" class="btn btn-success" value="Register">
+            <div class="d-flex">
+                <div class="register-action-container mx-auto">
                     <a href="/">
-                        <input type="button" class="btn btn-warning" value="Cancel">
+                        <input id="cancelButton" type="button" class="btn btn-warning" value=" Cancel ">
                     </a>
-                </fieldset>
+                    </form>
+                </div>
+            </div>
 
-            </form>
         </div>
     </div>
-
-
 </main>
 
 
 
 
 
-<%- include ../partials/bottom_nav.ejs %>  
+<%- include ../partials/bottom_nav.ejs %>
 
 <%- include ../partials/footer.ejs %>
